@@ -1,0 +1,36 @@
+*{margin: 0px;padding: 0px;}
+.navbar{background-color:black;font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;padding-bottom: 7px;padding-top: 2px;width: 100vw;}
+.navbar li {float: left;list-style: none;padding: 0px;}
+.navbar ul{overflow: auto;padding: 1em 1.25rem}
+.navbar li a{text-decoration: none;padding: 20px 25px;text-transform: capitalize;color: white;cursor: pointer;border-radius: 10px;}
+.navbar li a:hover{background-color: gray;}
+.container {display: grid; grid-template-columns: 50% 50% 100%;box-sizing: border-box;margin-top: 1px;width: 100vw;}
+.item1{width: 50vw;height:31.25em;background-color: grey;float: right;margin:0%;padding-left: 0px;}
+.item2{width: 50vw;height: 31.25em;float: left;margin:0%;background-image: url(img2.jpg);background-repeat: no-repeat;background-size: 800px 500px;animation: slider infinite linear ;animation-delay: 0ms;position: relative;animation-direction: alternate-reverse;animation-duration: 45s;}
+@keyframes slider{ 
+    0%{background-image: url(slideshoe2.jpg);}
+    15%{background-image: url(img4.jpg);}
+    25%{background-image: url(slideshow3.jpg);}
+    50%{background-image: url(slideshow4.jpg);}
+    75%{background-image: url(img.jpg);}
+    100%{background-image: url(img3.jpg);}
+}
+.item1 h1{text-transform: capitalize;font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;text-align: center;padding: 30px;}
+button{text-align: center;margin: auto;display: flex;justify-content: center;display: grid;padding: 15px 30px;font-size: 45px;background-color: green;border-radius: 20px;}
+button:hover{background-color: gainsboro;}
+footer{background-color:black;color: blanchedalmond;padding-top: 10px;height: 100px;font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;}
+h1{text-align: center;text-transform: capitalize;font-family: Verdana, Geneva, Tahoma, sans-serif;color: #143d59;}
+p{text-align: center;font-size: 25px;text-transform: capitalize;color: white;padding-top: 20px;font-family: cursive;font-weight: bolder;}
+.cancelbtn {padding: 10px 15px;background-color: #f44336;margin-right: 10vw;}
+.cancelbtn, .signupbtn {float: left;width: 14vw;font-size: larger;}
+#form{font-family: Arial, Helvetica, sans-serif;text-transform: capitalize;color: white;font-weight: bolder;font-size: 25px;}
+input[type=text], input[type=password], input[type=email],input[type=number],input[type=datetime]{width: 70%;padding: 12px 10px;margin: 10px 0;display: inline-block;border: 2px solid black;box-sizing: border-box;}
+footer{background-color: black;margin-top: 0.13em;padding-bottom: 2.75em;width: 100vw;}
+img{margin-left: 40%;height: 50%;}
+h2{text-align: center;font-family: Verdana, Geneva, Tahoma, sans-serif;}
+span{background-color: aqua;font-family: cursive;margin-left: 225px;}
+.div{margin: 20px;font-size: large;font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;background-color: darkgoldenrod;}
+@media (max-width:500px) and (min-width:0px){.navbar li a{padding: 5px;}}
+@media (max-width:500px) and (min-width:0px){.submit{width: 105px;height: 120px;}}
+@media (max-width:500px) and (min-width:0px){.container item1 h1{justify-content: left;}}
+@media (max-width:500px) and (min-width:0px){.cancelbtn{width:100px;}}
